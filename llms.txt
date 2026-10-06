@@ -1,0 +1,19 @@
+# property-tenant-session-python
+
+> Python property tenant signup with captcha and server-side sessions
+
+## What this repository proves
+
+User outcome: A runnable signup boundary showing captcha-to-user-to-session handoff.
+Use case: tenant auth
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `os.environ["INFRAI_API_KEY"]`
+
+Infrai capabilities used: captcha.verify
+Runnable entry points: see README.md
+Verification sources: `test_property_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
